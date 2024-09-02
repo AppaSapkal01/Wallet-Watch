@@ -16,9 +16,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin: ['https://wallet-watch-frontend.vercel.app'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
+    origin: ['http://localhost:5173'],
 };
 
 app.use(cors(corsOptions));
