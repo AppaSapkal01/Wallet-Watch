@@ -1,7 +1,7 @@
-import { BASE_URL } from '../../Utils/url'
 import axios from 'axios';
 import { getUserFromStorage } from "../../Utils/getUserFromStorage";
 
+const BASE_URL = import.meta.env.VITE_API_URL;
 const token = getUserFromStorage();
 
 

@@ -1,8 +1,8 @@
-import { BASE_URL } from '../../Utils/url'
 import axios from 'axios';
 import { getUserFromStorage } from "../../Utils/getUserFromStorage";
 
 const token = getUserFromStorage();
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export const loginAPI = async ({ email, password }) => {
     const res = await axios.post(`${BASE_URL}/user/login`, {
